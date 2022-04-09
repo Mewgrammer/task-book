@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="934fe923-d9ba-4b1c-a88b-bded6efadf1d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/backend/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/github/mewgrammer/taskbook/model/TaskState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/github/mewgrammer/taskbook/model/dto/CreateTaskDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/github/mewgrammer/taskbook/repository/TaskRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/github/mewgrammer/taskbook/service/TaskService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/kotlin/github/mewgrammer/taskbook/TaskbookApplication.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/test/kotlin/github/mewgrammer/taskbook/TaskbookApplicationTests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/api/authentication.api-client.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/LoginForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/RegisterForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/models/nav-item.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/models/user-credentials.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/models/user.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/application.store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/LoginView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/LogoutView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/RegisterView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/TasksView.vue" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/backend">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="Class" />
+        <option value="Kotlin Interface" />
+        <option value="Interface" />
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="taskbook/invalid/JPA" />
+    </ignored-facets>
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="270elpOzsS8yYcEoasJX7KPaHS1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Michael/source/taskbook/backend/src/main/kotlin/github/mewgrammer/taskbook/security/annotations",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "618427bfdd2cdcc32753f04f7f86ad67",
+    "ts.external.directory.path": "C:\\Users\\Michael\\source\\taskbook\\frontend\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2"
+    ]
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Michael\source\taskbook\backend\src\main\kotlin\github\mewgrammer\taskbook\security\annotations" />
+      <recent name="C:\Users\Michael\source\taskbook\backend\src\main\resources" />
+      <recent name="C:\Users\Michael\source\taskbook\frontend\src\models" />
+      <recent name="C:\Users\Michael\source\taskbook\frontend\src\views" />
+      <recent name="C:\Users\Michael\source\taskbook\frontend\src\components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Michael\source\taskbook\frontend" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="github.mewgrammer.taskbook.security.model" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="github.mewgrammer.taskbook.security.annotations" />
+      <recent name="github.mewgrammer.taskbook.security" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="github.mewgrammer.taskbook.persistence" />
+      <recent name="github.mewgrammer.taskbook.model.dto" />
+      <recent name="github.mewgrammer.taskbook.model" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.TaskBook">
+    <configuration name="Attach Edge" type="JavascriptDebugType" temporary="true" uri="http://localhost:8080/">
+      <method v="2" />
+    </configuration>
+    <configuration name="TaskBook" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="taskbook" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="github.mewgrammer.taskbook.TaskbookApplication" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/backend" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="serve" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="yarn" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.Attach Edge" />
+      <item itemvalue="npm.serve" />
+      <item itemvalue="Spring Boot.TaskBook" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.Attach Edge" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="934fe923-d9ba-4b1c-a88b-bded6efadf1d" name="Changes" comment="" />
+      <created>1648461585981</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648461585981</updated>
+      <workItem from="1648461587784" duration="5791000" />
+      <workItem from="1648481811522" duration="3974000" />
+      <workItem from="1648486116185" duration="7084000" />
+      <workItem from="1648576730865" duration="6858000" />
+      <workItem from="1649356118929" duration="255000" />
+      <workItem from="1649356390752" duration="457000" />
+      <workItem from="1649356977715" duration="9173000" />
+      <workItem from="1649490628130" duration="8290000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:com.google.inject:guice" />
+    <option featureType="dependencySupport" implementationName="java:javax.persistence:javax.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/frontend" />
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
