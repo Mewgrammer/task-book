@@ -3,8 +3,8 @@
     <v-container>
       <v-row>
         <v-text-field
-          v-model="email"
-          label="E-Mail"
+          v-model="username"
+          label="Username"
           required
         ></v-text-field>
       </v-row>
@@ -28,10 +28,10 @@ import { ref } from "vue";
 import { useStore } from "@/store/application.store";
 
 const store = useStore();
-const email = ref("");
+const username = ref("");
 const password = ref("");
 
 function login() {
-  store.dispatch("login", { email, password });
+  store.login({ username: username.value, password: password.value });
 }
 </script>

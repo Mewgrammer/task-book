@@ -10,7 +10,9 @@
 <script setup lang="ts">
 import NavBar from "@/components/NavBar.vue";
 import { NavItem } from "@/models/nav-item.interface";
-import { store } from "@/store/application.store";
+import { useStore } from "@/store/application.store";
+
+const store = useStore();
 
 const navLinks: NavItem[] = [
   {
@@ -20,20 +22,11 @@ const navLinks: NavItem[] = [
   {
     link: "/tasks",
     title: "My Tasks",
-    condition: () => store.getters.authenticated ?? false
+    condition: () => store.authenticated ?? false
   },
   {
     link: "/login",
     title: "Login"
-  },
-  {
-    link: "/register",
-    title: "Register"
-  },
-  {
-    link: "/logout",
-    title: "Logout",
-    condition: () => store.getters.authenticated ?? false
   },
   {
     link: "/about",

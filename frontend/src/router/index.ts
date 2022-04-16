@@ -2,10 +2,12 @@ import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import LoginView from "../views/LoginView.vue";
 import LogoutView from "../views/LogoutView.vue";
-import RegisterView from "../views/RegisterView.vue";
 import AboutView from "../views/AboutView.vue";
-import TasksView from "../views/TasksView.vue";
-import { store } from "@/store/application.store";
+import TaskListView from "../views/task/ListView.vue";
+import TaskCreateView from "../views/task/CreateView.vue";
+import TaskDetailsView from "../views/task/DetailsView.vue";
+import TaskEditView from "../views/task/EditView.vue";
+import { useStore } from "@/store/application.store";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -16,12 +18,21 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/tasks",
     name: "tasks",
-    component: TasksView
-  },
-  {
-    path: "/register",
-    name: "register",
-    component: RegisterView
+    component: TaskListView,
+    children: [
+      {
+        path: "create",
+        component: TaskCreateView
+      },
+      {
+        path: ":id/details",
+        component: TaskDetailsView
+      },
+      {
+        path: ":id/details",
+        component: TaskEditView
+      }
+    ]
   },
   {
     path: "/login",
@@ -46,7 +57,7 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from) => {
-  if (to.name !== "login" && to.name !== "register" && !store.getters.authenticated) {
+  if (to.name !== "login" && to.name !== "register" && !useStore().authenticated) {
     return { name: "login" }; // redirect to login if unauthenticated
   }
 });

@@ -10,7 +10,7 @@ import { onMounted } from "vue";
 const store = useStore();
 const router = useRouter();
 onMounted(async () => {
-  await store.dispatch("logout");
+  await store.logout();
   await router.push("/");
 });
 </script>

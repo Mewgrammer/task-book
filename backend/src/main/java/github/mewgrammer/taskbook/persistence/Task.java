@@ -1,18 +1,17 @@
 package github.mewgrammer.taskbook.persistence;
 
 import github.mewgrammer.taskbook.model.TaskState;
+import github.mewgrammer.taskbook.persistence.audit.AuditableEntity;
 import lombok.*;
-import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
-import java.time.Instant;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Task extends BaseEntity {
+public class Task extends AuditableEntity {
 
     @Column
     private String title;

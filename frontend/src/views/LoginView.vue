@@ -8,15 +8,17 @@
 </template>
 
 <script setup lang="ts">
-import { mutations, useStore } from "@/store/application.store";
-import { useRouter } from "vue-router";
 import LoginForm from "@/components/LoginForm.vue";
+import { useStore } from "@/store/application.store";
+import { useRouter } from "vue-router";
 
 const store = useStore();
 const router = useRouter();
-store.subscribe(async (mutation, state) => {
-  if (mutation.type === mutations.SET_USER && !!state.user) {
-    await router.push("/");
+
+store.$subscribe((mutation, state) => {
+  if (state.user) {
+    router.push("/tasks")
   }
 });
+
 </script>
