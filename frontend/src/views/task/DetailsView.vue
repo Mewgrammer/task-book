@@ -1,6 +1,8 @@
 <template>
-  <h4>Task Details</h4>
-  <task-form :mode="FormMode.VIEW" :task="task" />
+  <v-container>
+    <h1>Details</h1>
+    <task-form :mode="FormMode.VIEW" :task="task" />
+  </v-container>
 </template>
 
 <script setup lang="ts">

@@ -26,7 +26,7 @@ export interface CreateTaskDto {
      * @type {string}
      * @memberof CreateTaskDto
      */
-    'title': string;
+    'title'?: string;
     /**
      * 
      * @type {string}

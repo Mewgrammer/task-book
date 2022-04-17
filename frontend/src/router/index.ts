@@ -7,6 +7,7 @@ import TaskListView from "../views/task/ListView.vue";
 import TaskCreateView from "../views/task/CreateView.vue";
 import TaskDetailsView from "../views/task/DetailsView.vue";
 import TaskEditView from "../views/task/EditView.vue";
+import TaskDeleteView from "../views/task/DeleteView.vue";
 import { useStore } from "@/store/application.store";
 
 const routes: Array<RouteRecordRaw> = [
@@ -19,20 +20,26 @@ const routes: Array<RouteRecordRaw> = [
     path: "/tasks",
     name: "tasks",
     component: TaskListView,
-    children: [
-      {
-        path: "create",
-        component: TaskCreateView
-      },
-      {
-        path: ":id/details",
-        component: TaskDetailsView
-      },
-      {
-        path: ":id/details",
-        component: TaskEditView
-      }
-    ]
+  },
+  {
+    path: "/tasks/create",
+    name: "tasks.create",
+    component: TaskCreateView
+  },
+  {
+    path: "/tasks/:id/details",
+    name: "tasks.view",
+    component: TaskDetailsView
+  },
+  {
+    path: "/tasks/:id/edit",
+    name: "tasks.edit",
+    component: TaskEditView
+  },
+  {
+    path: "/tasks/:id/delete",
+    name: "tasks.delete",
+    component: TaskDeleteView
   },
   {
     path: "/login",

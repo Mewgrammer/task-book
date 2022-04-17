@@ -26,7 +26,9 @@
         ></v-text-field>
       </v-row>
       <v-row>
-        <v-select label="Status" :items="Object.values(TaskState)">
+        <v-select label="Status" :readonly="mode !== FormMode.VIEW"
+                  :value="task.status"
+                  :items="Object.values(TaskState)">
         </v-select>
       </v-row>
       <v-row>

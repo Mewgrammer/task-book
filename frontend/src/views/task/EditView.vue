@@ -1,6 +1,8 @@
 <template>
-  <h4>Edit Task</h4>
-  <task-form :mode="FormMode.EDIT" :task="task" @save="onTaskSaved" />
+  <v-container>
+    <h1>Edit</h1>
+    <task-form :mode="FormMode.EDIT" :task="task" @save="onTaskSaved" />
+  </v-container>
 </template>
 
 <script setup lang="ts">

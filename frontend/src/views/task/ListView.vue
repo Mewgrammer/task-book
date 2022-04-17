@@ -1,13 +1,9 @@
 <template>
-  <h4>Tasks</h4>
-  <task-list></task-list>
+  <v-container>
+    <task-table/>
+  </v-container>
 </template>
 
 <script setup lang="ts">
-import { useStore } from "@/store/application.store";
-import { useRouter } from "vue-router";
-import TaskList from "@/components/TaskList.vue";
-
-const store = useStore();
-const router = useRouter();
+import TaskTable from "@/components/TaskTable.vue";
 </script>

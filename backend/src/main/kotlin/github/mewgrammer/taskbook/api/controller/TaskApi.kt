@@ -2,14 +2,18 @@ package github.mewgrammer.taskbook.api.controller
 
 import github.mewgrammer.taskbook.api.controller.model.UpdateTaskDto
 import github.mewgrammer.taskbook.api.model.CreateTaskDto
+import github.mewgrammer.taskbook.api.model.Paginated
+import github.mewgrammer.taskbook.api.model.PaginationDto
 import github.mewgrammer.taskbook.api.model.TaskDto
 import io.swagger.v3.oas.annotations.Operation
+import io.swagger.v3.oas.annotations.Parameter
 import io.swagger.v3.oas.annotations.media.ArraySchema
 import io.swagger.v3.oas.annotations.media.Content
 import io.swagger.v3.oas.annotations.media.Schema
 import io.swagger.v3.oas.annotations.responses.ApiResponse
 import io.swagger.v3.oas.annotations.responses.ApiResponses
 import io.swagger.v3.oas.annotations.tags.Tag
+import org.springframework.data.domain.Page
 import org.springframework.http.HttpStatus
 import org.springframework.security.core.Authentication
 import org.springframework.web.bind.annotation.*
@@ -19,17 +23,11 @@ import javax.validation.Valid
 @Tag(name = "task", description = "API to perform CRUD Operations on Tasks")
 interface TaskApi {
 
-    @Operation(summary = "Gets all Tasks")
+    @Operation(summary = "Gets a page of Tasks")
     @ApiResponses(
         value = [
             ApiResponse(
                 responseCode = "200", description = "Returns all Tasks for the requesting user",
-                content = [
-                    Content(
-                        mediaType = "application/json",
-                        array = ArraySchema(schema = Schema(implementation = TaskDto::class))
-                    )
-                ]
             ),
             ApiResponse(
                 responseCode = "400", description = "Invalid data supplied",
@@ -39,20 +37,13 @@ interface TaskApi {
             )
         ]
     )
-    @GetMapping
-    fun getTasks(auth: Authentication): List<TaskDto>
+    fun getTasks(pagination: PaginationDto, auth: Authentication): Paginated<TaskDto>
 
     @Operation(summary = "Update a Task")
     @ApiResponses(
         value = [
             ApiResponse(
                 responseCode = "200", description = "The Task was created",
-                content = [
-                    Content(
-                        mediaType = "application/json",
-                        schema = Schema(implementation = TaskDto::class)
-                    )
-                ]
             ),
             ApiResponse(
                 responseCode = "400", description = "Invalid data supplied",
@@ -63,19 +54,13 @@ interface TaskApi {
         ]
     )
     @ResponseStatus(HttpStatus.BAD_REQUEST)
-    fun addTask(@Valid @RequestBody createTaskData: CreateTaskDto): TaskDto
+    fun addTask(createTaskData: CreateTaskDto): TaskDto
 
     @Operation(summary = "Updates a Task")
     @ApiResponses(
         value = [
             ApiResponse(
                 responseCode = "200", description = "The Task was updated",
-                content = [
-                    Content(
-                        mediaType = "application/json",
-                        schema = Schema(implementation = TaskDto::class)
-                    )
-                ]
             ),
             ApiResponse(
                 responseCode = "400", description = "Invalid update-data supplied",
@@ -86,8 +71,8 @@ interface TaskApi {
         ]
     )
     fun updateTask(
-        @PathVariable id: UUID,
-        @Valid @RequestBody updateTaskData: UpdateTaskDto,
+        id: UUID,
+        updateTaskData: UpdateTaskDto,
         auth: Authentication
     ): TaskDto
 
@@ -102,5 +87,5 @@ interface TaskApi {
             )
         ]
     )
-    fun deleteTask(@PathVariable id: Long)
+    fun deleteTask(id: UUID)
 }

@@ -1,6 +1,5 @@
 .gitignore
 .npmignore
-.openapi-generator-ignore
 api.ts
 base.ts
 common.ts
@@ -10,6 +9,7 @@ git_push.sh
 index.ts
 model/create-task-dto.ts
 model/index.ts
+model/paginated-task-dto.ts
 model/task-dto.ts
 model/task-state.ts
 model/update-task-dto.ts

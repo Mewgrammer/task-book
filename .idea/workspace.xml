@@ -4,105 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="934fe923-d9ba-4b1c-a88b-bded6efadf1d" name="Changes" comment="added basic auth with permissions for fixed users. Filter tasks by ownership or admin privileges">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_13_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_therapi_therapi_runtime_javadoc_0_13_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_classgraph_classgraph_4_8_143.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_annotations_2_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_core_2_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_models_2_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_common_1_6_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_javadoc_1_6_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_kotlin_1_6_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_security_1_6_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_ui_1_6_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_webmvc_core_1_6_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_swagger_ui_4_10_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_webjars_locator_core_0_48.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/TaskBook.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/generate_openapi_client.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/taskbook_ui.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/db/taskbook.lock.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/derby.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/openapi/generated-clients/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/openapi/generated-clients/.npmignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/openapi/generated-clients/.openapi-generator-ignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/openapi/generated-clients/.openapi-generator/FILES" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/openapi/generated-clients/.openapi-generator/VERSION" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/openapi/generated-clients/.openapi-generator/openapi.json-default.sha256" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/openapi/generated-clients/api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/openapi/generated-clients/base.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/openapi/generated-clients/common.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/openapi/generated-clients/configuration.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/openapi/generated-clients/controller/task-api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/openapi/generated-clients/git_push.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/openapi/generated-clients/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/openapi/generated-clients/model/create-task-dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/openapi/generated-clients/model/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/openapi/generated-clients/model/task-dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/openapi/generated-clients/model/task-state.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/openapi/generated-clients/model/update-task-dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/openapi/openapi.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/github/mewgrammer/taskbook/persistence/audit/AuditableEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/github/mewgrammer/taskbook/persistence/audit/SecurityAuditAware.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/kotlin/github/mewgrammer/taskbook/api/controller/TaskApi.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/kotlin/github/mewgrammer/taskbook/api/controller/model/UpdateTaskDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/kotlin/github/mewgrammer/taskbook/config/AuditConfig.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/kotlin/github/mewgrammer/taskbook/config/OpenApiConfig.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/kotlin/github/mewgrammer/taskbook/security/helpers/PermissionHelper.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/api/basic-authentication.helper.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/api/taskbook/api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/api/taskbook/base.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/api/taskbook/common.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/api/taskbook/configuration.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/api/taskbook/controller/task-api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/api/taskbook/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/api/taskbook/model/create-task-dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/api/taskbook/model/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/api/taskbook/model/task-dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/api/taskbook/model/task-state.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/api/taskbook/model/update-task-dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/TaskForm.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/config/config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/models/form-mode.enum.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/task/CreateView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/task/EditView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/task/ListView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="934fe923-d9ba-4b1c-a88b-bded6efadf1d" name="Changes" comment="AoP permission checks + fix router in frontend">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/TaskBook.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/db/taskbook.lock.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/openapi/generated-clients/.openapi-generator/FILES" beforeDir="false" afterPath="$PROJECT_DIR$/backend/openapi/generated-clients/.openapi-generator/FILES" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/openapi/generated-clients/.openapi-generator/openapi.json-default.sha256" beforeDir="false" afterPath="$PROJECT_DIR$/backend/openapi/generated-clients/.openapi-generator/openapi.json-default.sha256" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/openapi/generated-clients/controller/task-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/openapi/generated-clients/controller/task-api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/openapi/generated-clients/model/create-task-dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/openapi/generated-clients/model/create-task-dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/openapi/generated-clients/model/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/openapi/generated-clients/model/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/openapi/openapi.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/openapi/openapi.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/github/mewgrammer/taskbook/mapping/TaskMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/github/mewgrammer/taskbook/mapping/TaskMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/github/mewgrammer/taskbook/model/TaskState.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/github/mewgrammer/taskbook/model/TaskState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/github/mewgrammer/taskbook/model/dto/CreateTaskDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/github/mewgrammer/taskbook/api/model/CreateTaskDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/github/mewgrammer/taskbook/model/dto/TaskDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/github/mewgrammer/taskbook/api/model/TaskDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/github/mewgrammer/taskbook/persistence/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/github/mewgrammer/taskbook/persistence/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/github/mewgrammer/taskbook/persistence/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/github/mewgrammer/taskbook/persistence/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/github/mewgrammer/taskbook/repository/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/github/mewgrammer/taskbook/repository/TaskRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/github/mewgrammer/taskbook/api/model/CreateTaskDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/github/mewgrammer/taskbook/api/model/CreateTaskDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/github/mewgrammer/taskbook/api/model/TaskDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/github/mewgrammer/taskbook/api/model/TaskDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/github/mewgrammer/taskbook/repository/TaskRepository.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/github/mewgrammer/taskbook/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/github/mewgrammer/taskbook/service/TaskService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/kotlin/github/mewgrammer/taskbook/controller/TaskController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/kotlin/github/mewgrammer/taskbook/api/controller/TaskController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/kotlin/github/mewgrammer/taskbook/security/MethodSecurityConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/kotlin/github/mewgrammer/taskbook/config/MethodSecurityConfiguration.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/kotlin/github/mewgrammer/taskbook/security/WebSecurityConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/kotlin/github/mewgrammer/taskbook/config/WebSecurityConfiguration.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/kotlin/github/mewgrammer/taskbook/security/annotations/AdminAuthorization.kt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/kotlin/github/mewgrammer/taskbook/security/annotations/AdminAuthorization.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/api/authentication.api-client.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/LoginForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/LoginForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/NavBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/NavBar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/RegisterForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/CurrentUser.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/TaskComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/TaskList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/models/task.interface.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/models/user-credentials.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/models/user.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/models/user.interface.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/kotlin/github/mewgrammer/taskbook/api/controller/TaskApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/kotlin/github/mewgrammer/taskbook/api/controller/TaskApi.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/kotlin/github/mewgrammer/taskbook/api/controller/TaskController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/kotlin/github/mewgrammer/taskbook/api/controller/TaskController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/kotlin/github/mewgrammer/taskbook/config/MethodSecurityConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/kotlin/github/mewgrammer/taskbook/config/MethodSecurityConfiguration.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/kotlin/github/mewgrammer/taskbook/security/annotations/AdminAuthorization.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/kotlin/github/mewgrammer/taskbook/security/annotations/ReadPrivilege.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/kotlin/github/mewgrammer/taskbook/security/annotations/UserAuthorization.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/kotlin/github/mewgrammer/taskbook/security/annotations/WritePrivilege.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/kotlin/github/mewgrammer/taskbook/security/helpers/PermissionHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/kotlin/github/mewgrammer/taskbook/security/helpers/PermissionHelper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/api/taskbook/controller/task-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/taskbook/controller/task-api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/api/taskbook/model/create-task-dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/taskbook/model/create-task-dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/api/taskbook/model/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/taskbook/model/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/TaskForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/TaskForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/TaskList.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/config/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/config/config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/router/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/store/application.store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/application.store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/LoginView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/LoginView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/LogoutView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/LogoutView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/TasksView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/task/DetailsView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/vue.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/task/DetailsView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/task/DetailsView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/task/EditView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/task/EditView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/task/ListView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/task/ListView.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,45 +109,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Michael/source/taskbook/frontend/src/api/taskbook&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;618427bfdd2cdcc32753f04f7f86ad67&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Michael\\source\\taskbook\\frontend\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Michael/source/taskbook/frontend/src/api/taskbook",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "spring.configuration.checksum": "618427bfdd2cdcc32753f04f7f86ad67",
+    "ts.external.directory.path": "C:\\Users\\Michael\\source\\taskbook\\frontend\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;h2&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Michael\source\taskbook\frontend\src\api\taskbook" />
+      <recent name="C:\Users\Michael\source\taskbook\frontend\src\views\task" />
       <recent name="C:\Users\Michael\source\taskbook\frontend\src\views" />
       <recent name="C:\Users\Michael\source\taskbook\frontend\src\components" />
       <recent name="C:\Users\Michael\source\taskbook\backend\src\main\kotlin\github\mewgrammer\taskbook\security\annotations" />
-      <recent name="C:\Users\Michael\source\taskbook\backend\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Michael\source\taskbook\backend\src\main\kotlin\github\mewgrammer\taskbook\config" />
@@ -227,6 +163,8 @@
       <recent name="github.mewgrammer.taskbook.security" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="github.mewgrammer.taskbook.mapping" />
+      <recent name="github.mewgrammer.taskbook.api.model" />
       <recent name="github.mewgrammer.taskbook.persistence" />
       <recent name="github.mewgrammer.taskbook.model.dto" />
       <recent name="github.mewgrammer.taskbook.model" />
@@ -239,7 +177,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.TaskBook">
+  <component name="RunManager" selected="Maven.generate openapi-client">
     <configuration name="Attach Edge" type="JavascriptDebugType" temporary="true" uri="http://localhost:3000/" useFirstLineBreakpoints="true">
       <method v="2" />
     </configuration>
@@ -247,10 +185,11 @@
       <item itemvalue="JavaScript Debug.Attach Edge" />
       <item itemvalue="Maven.generate openapi-client" />
       <item itemvalue="npm.taskbook-ui" />
-      <item itemvalue="Spring Boot.TaskBook" />
+      <item itemvalue="Spring Boot.Taskbook" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Taskbook" />
         <item itemvalue="JavaScript Debug.Attach Edge" />
       </list>
     </recent_temporary>
@@ -272,7 +211,7 @@
       <workItem from="1649356977715" duration="9173000" />
       <workItem from="1649490628130" duration="9097000" />
       <workItem from="1650026791245" duration="23362000" />
-      <workItem from="1650092467482" duration="2729000" />
+      <workItem from="1650092467482" duration="20697000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1649499180949</created>
@@ -281,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649499180949</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added basic auth with permissions for fixed users. Filter tasks by ownership or admin privileges">
+      <created>1650095339815</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1650095339815</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,7 +258,19 @@
     </ignored-roots>
     <MESSAGE value="initial commit" />
     <MESSAGE value="added basic auth with permissions for fixed users. Filter tasks by ownership or admin privileges" />
-    <option name="LAST_COMMIT_MESSAGE" value="added basic auth with permissions for fixed users. Filter tasks by ownership or admin privileges" />
+    <MESSAGE value="AoP permission checks + fix router in frontend" />
+    <option name="LAST_COMMIT_MESSAGE" value="AoP permission checks + fix router in frontend" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/github/mewgrammer/taskbook/service/TaskService.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -23,6 +23,8 @@ import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } fr
 // @ts-ignore
 import { CreateTaskDto } from '../model';
 // @ts-ignore
+import { PaginatedTaskDto } from '../model';
+// @ts-ignore
 import { TaskDto } from '../model';
 // @ts-ignore
 import { UpdateTaskDto } from '../model';
@@ -71,11 +73,11 @@ export const TaskApiAxiosParamCreator = function (configuration?: Configuration)
         /**
          * 
          * @summary Deletes a Task with a given ID
-         * @param {number} id 
+         * @param {string} id 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        deleteTask: async (id: number, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        deleteTask: async (id: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'id' is not null or undefined
             assertParamExists('deleteTask', 'id', id)
             const localVarPath = `/api/tasks/{id}`
@@ -104,11 +106,13 @@ export const TaskApiAxiosParamCreator = function (configuration?: Configuration)
         },
         /**
          * 
-         * @summary Gets all Tasks
+         * @summary Gets a page of Tasks
+         * @param {number} [page] 
+         * @param {number} [size] 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getTasks: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getTasks: async (page?: number, size?: number, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/api/tasks`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -120,6 +124,14 @@ export const TaskApiAxiosParamCreator = function (configuration?: Configuration)
             const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
+
+            if (page !== undefined) {
+                localVarQueryParameter['page'] = page;
+            }
+
+            if (size !== undefined) {
+                localVarQueryParameter['size'] = size;
+            }
 
 
     
@@ -196,22 +208,24 @@ export const TaskApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Deletes a Task with a given ID
-         * @param {number} id 
+         * @param {string} id 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async deleteTask(id: number, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async deleteTask(id: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.deleteTask(id, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
-         * @summary Gets all Tasks
+         * @summary Gets a page of Tasks
+         * @param {number} [page] 
+         * @param {number} [size] 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getTasks(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<TaskDto>>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getTasks(options);
+        async getTasks(page?: number, size?: number, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<PaginatedTaskDto>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getTasks(page, size, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
@@ -249,21 +263,23 @@ export const TaskApiFactory = function (configuration?: Configuration, basePath?
         /**
          * 
          * @summary Deletes a Task with a given ID
-         * @param {number} id 
+         * @param {string} id 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        deleteTask(id: number, options?: any): AxiosPromise<void> {
+        deleteTask(id: string, options?: any): AxiosPromise<void> {
             return localVarFp.deleteTask(id, options).then((request) => request(axios, basePath));
         },
         /**
          * 
-         * @summary Gets all Tasks
+         * @summary Gets a page of Tasks
+         * @param {number} [page] 
+         * @param {number} [size] 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getTasks(options?: any): AxiosPromise<Array<TaskDto>> {
-            return localVarFp.getTasks(options).then((request) => request(axios, basePath));
+        getTasks(page?: number, size?: number, options?: any): AxiosPromise<PaginatedTaskDto> {
+            return localVarFp.getTasks(page, size, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -301,24 +317,26 @@ export class TaskApi extends BaseAPI {
     /**
      * 
      * @summary Deletes a Task with a given ID
-     * @param {number} id 
+     * @param {string} id 
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TaskApi
      */
-    public deleteTask(id: number, options?: AxiosRequestConfig) {
+    public deleteTask(id: string, options?: AxiosRequestConfig) {
         return TaskApiFp(this.configuration).deleteTask(id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
-     * @summary Gets all Tasks
+     * @summary Gets a page of Tasks
+     * @param {number} [page] 
+     * @param {number} [size] 
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TaskApi
      */
-    public getTasks(options?: AxiosRequestConfig) {
-        return TaskApiFp(this.configuration).getTasks(options).then((request) => request(this.axios, this.basePath));
+    public getTasks(page?: number, size?: number, options?: AxiosRequestConfig) {
+        return TaskApiFp(this.configuration).getTasks(page, size, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
